@@ -73,8 +73,8 @@ label {
 
   .hero-image {
     display: flex;
-    justify-content: center; /* center horizontal */
-    padding-left: 90vw;
+    justify-content: center;
+    padding-left: 26vw;
     align-items: center; /* center vertical */
     overflow: hidden;
     z-index: 1;
@@ -85,16 +85,18 @@ label {
   }
 
   .journey-jugs{
-      margin: -200px -10px 0 auto;
+      margin: -326px -10px 2% auto;
       width: 70vw;
-      max-width: 500px;
+      max-width: 600px;
       height: 100%;
   }
 
   .page-content{
-    margin: 0px 13px 80px 13px;
+    margin: 0 13px;
     display: flex;
     flex-direction: column;
+    /* width: 100vw; */
+    margin-bottom: 80px;
   }
 
   footer {
@@ -149,7 +151,7 @@ label {
     width:100%;
   }
   
-  .fieldRow label{
+  form label{
     display: flex;
     flex-direction: column;
   }
@@ -220,56 +222,89 @@ label {
     line-height: 16px;
     margin-top: -14px;
   }
-
+/* 
   #city{
-    /* width:; */
+    min-width: 40vw;
   }
 
   #state{
-    /* width: 16vw; */
+    width: 100%;
   }
+
+  #zipcode{
+    min-width: 23vw;
+  } */
 
   .submit{
     max-width: 150px;
   }
 
-  @media only screen and (min-width: 1024px) {
-    .page-content{
-      display: flex;
-      flex-direction: column;
-      margin-left: 30%;
-      margin-right: 30%;
-      max-width: 525px;
-      /* width: 80vw; */
-  }
-
   @media only screen and (min-width: 768px) {
+    .city-state-zip {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width:100%;
+    }
+
+    .field-city {
+      margin-right:17px;
+      width: 60vw;
+    }
+
     .logo{
       width: 170px;
     }
-    
+
     .hero-image {
-      padding-left: 0vw;
+      padding-left: 0px;
     }
     
     .page-content{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1125px;
-        width: 80vw;
-    }
+      display: flex;
+      flex-direction: column;
+      /* margin: auto; */
+      /* margin-bottom: 80px; */
+      /* max-width: 80vw; */
+  }
 
     .intro-content{
-      max-width: 50vw;
-      margin: 80px 4% auto auto;
-    }
-
-    .journey-jugs {
-      position: sticky;
-      position: -webkit-sticky;
-      top: 170px;
-      width: 50%;
+      /* max-width: 50vw; */
+      /* margin: 80px 0px 0px 30px; */
+      margin-top: 80px;
     }
   }
+
+  @media only screen and (min-width: 1024px) {
+    .page-content{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      margin: auto;
+      max-width: 1200px;
+  }
+
+    .journey-jugs {
+      margin: -300px -10px 2% auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 16vh;
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  .intro-content{
+    max-width: 40vw;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  }
+
+
+
+  /* .journey-jugs {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 170px;
+    width: 50%; */
