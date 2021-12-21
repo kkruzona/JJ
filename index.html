@@ -48,7 +48,7 @@
                         <label for="email">Email*</label>
                         <input type="text" id="email" name="user_email" placeholder="john@gmail.com" onfocus="this.placeholder = ''" required>
                         <label for="telephone">Phone Number*</label>
-                        <input type="text" id="telephone" name="user_telephone" placeholder="123-456-7890" onfocus="this.placeholder = ''" required>
+                        <input type="tel" id="telephone" name="user_telephone" placeholder="123-456-7890" onfocus="this.placeholder = ''" required>
                         <label for="business-name">Business Name</label>
                         <input type="text" id="business-name" name="user_business-name" placeholder="Name & Co." onfocus="this.placeholder = ''">
                     </div>
@@ -62,18 +62,16 @@
                         <div class="city-state-zip">
                             <div class="field-city">
                                 <label for="city">City*</label>
-                                <input type="text" id="city" name="user_city" placeholder="Grand Rapids" onfocus="this.placeholder = ''" required>
+                                <input type="text" id="city" name="user_city" placeholder="Grand Rapids" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Grand Rapids'" required>
                             </div>
-                            <div class="fieldRow">
-                                <div class="field-margin-right">
+                                <div class="field-state">
                                     <label for="state">State*</label>
                                     <input type="text" id="state" name="user_state" placeholder="MI" onfocus="this.placeholder = ''" required>
                                 </div>
-                                <div class="field-normal">
+                                <div class="field-zipcode">
                                     <label for="zipcode">Zip*</label>
-                                    <input type="number" id="zipcode" name="user_zip" placeholder="49503" onfocus="this.placeholder = ''" required>
+                                    <input type="number" id="zipcode" name="user_zip" size="5" placeholder="49503" onfocus="this.placeholder = ''" required>
                                 </div>
-                            </div>    
                         </div>
                     </div>
                 </form>

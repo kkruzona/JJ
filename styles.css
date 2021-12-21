@@ -164,6 +164,27 @@ label {
     width:100%;
   }
 
+  .city-state-zip{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .field-city{
+    flex-grow: 1;
+    width: 100%;
+    /* margin-right: 0px; */
+  }
+
+  .field-state{
+    margin-right: 17px;
+    width: calc(50% - 17px);
+  }
+
+  .field-zipcode{
+    width: 50%;
+  }
+
   .field-margin-right{
     margin-right: 17px;
     width: 100%;
@@ -201,12 +222,11 @@ label {
   }
   
   :valid {
-    /* box-shadow: -5px 0 lime;
-    border-left: none;      */
+    border-left: initial;     
   }
   
-  :invalid {
-    /* border:2px solid #FF0000;     */
+  input:invalid {
+    border:2px solid #FF0000;    
   }
 
   /* input:required,
@@ -282,7 +302,15 @@ label {
 
     .field-city {
       margin-right:17px;
-      width: 60vw;
+      width: calc(50% - 17px);
+    }
+
+    .field-state{
+      width: calc(20% - 17px);
+    }
+
+    .field-zipcode{
+      width: 30%;
     }
   }
 
@@ -295,12 +323,9 @@ label {
     .page-content{
       display: flex;
       flex-direction: row-reverse;
-      margin: 80px 10%;
+      margin: 80px auto;
+      padding: 0 40px;
       max-width: 1200px;
-  }
-
-  .intro-content {
-    max-width: 35vw;
   }
 
   .journey-jugs {
@@ -308,5 +333,6 @@ label {
     position: -webkit-sticky;
     margin-top: -450px;
     max-width: 630px;
+    width: 60%;
   }
 }
