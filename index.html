@@ -32,7 +32,7 @@
                 <p>Curious about the history? Search the hashtag #JourneyJug on your favorite social to see the history & fun behind the traveling growler.</p>
             </div>
             <div class="form-content">
-                <form id="userData">
+                <form id="userData" action="/thankyou.html" method="post">
                     <div class="user-information">
                         <h2 class="form-section-text">Your Information</h2>
                         <div class="fieldRow">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <label for="email">Email*</label>
-                        <input type="text" id="email" name="user_email" placeholder="john@gmail.com" onfocus="this.placeholder = ''" required>
+                        <input type="email" id="email" name="user_email" placeholder="john@gmail.com" onfocus="this.placeholder = ''" required>
                         <label for="telephone">Phone Number*</label>
                         <input type="tel" id="telephone" name="user_telephone" placeholder="123-456-7890" onfocus="this.placeholder = ''" required>
                         <label for="business-name">Business Name</label>
@@ -74,8 +74,8 @@
                                 </div>
                         </div>
                     </div>
+                    <button type="submit" class="submit" id="submit">Submit</button>
                 </form>
-                <button type="submit" class="submit" id="submit">Submit</button>
             </div>
         </div>
     </div>

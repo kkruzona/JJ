@@ -47,7 +47,7 @@ label {
   header {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     top: 0;
     z-index: 2;
     position: sticky;
@@ -65,10 +65,25 @@ label {
     z-index: 4;
   }
 
+  #navbar.collapsed{
+    background:rgb(108, 88, 88);
+    transition: all 0.5s ease-out;
+  }
+
   .logo{
     width: 100px;
     height: 100%;
     padding: 30px 0;
+  }
+
+  #navbar.collapsed a{
+    height: 60%;
+  }
+
+  #navbar.collapsed .logo{
+    width: 80px;
+    height: 100%;
+    padding: 8px;
   }
 
 
@@ -221,13 +236,13 @@ label {
     border:1px solid #F26122;
   }
   
-  :valid {
+  /* :valid {
     border-left: initial;     
-  }
+  } */
   
-  input:invalid {
+  /* input:invalid {
     border:2px solid #FF0000;    
-  }
+  } */
 
   /* input:required,
   textarea:required {
